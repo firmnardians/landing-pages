@@ -1,0 +1,303 @@
+body{
+    background: #dcf0fb;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./icon/icon.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+.card_navbar{
+    padding: 30px 50px;
+}
+.title_brand{
+    display: inline-block;
+    margin-left: 10px;
+}
+.title_brand h2{
+    margin: 0px;
+}
+.card_content{
+    padding: 20px;
+}
+.card_flex{
+    display: flex;
+}
+.card_left{
+    width: 50%;
+}
+.card_title_brand{
+    padding: 20px;
+    padding-left: 40px;
+}
+.card_title_brand h1{
+    font-weight: bold;
+    font-size: 60px;
+}
+.card_right{
+    width: 50%;
+}
+.card_img_brand{
+    height: 500px;
+    display: inline-flex;
+    margin-left: 20%;
+}
+img.img_brand{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    box-shadow: 11px -11px 0px rgb(69, 75, 222), 20px 19px 0px 0px #8BC34A;
+}
+.card_search{
+    padding-left: 40px;
+    position: absolute;
+    z-index: 2;
+}
+.input_data{
+    padding: 20px;
+    padding-left: 70px;
+    width: 600px;
+    border: 0px;
+    font-size: 30px;
+}
+.submit_data{
+    background: #454bde;
+    color: #fff;
+    width: 200px;
+    font-size: 30px;
+    padding: 0px 20px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.card_menu{
+    position: absolute;
+    margin-right: 50px;
+    right: 0px;
+    padding-top: 5px;
+    display: block;
+}
+.menu_title{
+    margin-right: 40px;
+    font-weight: 600;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+.iconPosition{
+    position: absolute;
+    top: 18px;
+    padding-left: 20px;
+    font-size: 40px;
+}
+.card_navbar_menu_mobile{
+    display: none;
+    float: right;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    padding-right: 20px;
+}
+
+.menu_list_mobile{
+    font-weight: 600;
+    border-bottom: 1px solid #333333;
+}
+
+
+@media screen and (max-width: 992px) {
+    .input_data {
+        padding: 20px;
+        padding-left: 70px;
+        width: 300px;
+        font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 888px) {
+    .card_right {
+        display: none;
+    }
+    .submit_data {
+        background: #454bde;
+        color: #fff;
+        width: 200px;
+        font-size: 21px;
+        padding: 0px 20px;
+        cursor: pointer;
+        border: 0px;
+    }
+    .card_left {
+       width: 100%;
+    }
+    .card_title_brand h1 {
+        font-weight: bold;
+        font-size: 60px;
+    }
+    .card_search {
+        padding-left: 40px;
+        position: absolute;
+        z-index: 2;
+        padding-right: 40px;
+    }
+    .input_data{
+        padding: 10px;
+        padding-left: 50px;
+        width: 100%;
+        font-size: 20px;
+    }
+    .iconPosition {
+        position: absolute;
+        top: 6px;
+        padding-left: 10px;
+        font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 499px) {
+    .card_title_brand h1 {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .card_title_brand {
+        padding: 20px;
+        padding-left: 0px;
+    }
+    .card_search {
+        padding-left: 0px;
+        position: absolute;
+        z-index: 0;
+        padding-right: 20px;
+    }
+    .submit_data {
+        background: #454bde;
+        color: #fff;
+        width: 100px;
+        font-size: 16px;
+        padding: 0px 20px;
+        cursor: pointer;
+        border: 0px;
+    }
+    .card_menu{
+        display: none;
+    }
+    .card_navbar{
+        padding: 30px 10px;
+    }
+    .card_navbar_menu_mobile{
+        display: block;
+    }
+  }
+
+
+
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    height: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top: 20px;
+    right: 10px;
+    position: relative;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #454bde;
+    color: white;
+  }
+  
+  .modal-body {
+      padding: 2px 16px;
+}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #295a7a;
+    color: white;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+    /* The Modal (background) */
